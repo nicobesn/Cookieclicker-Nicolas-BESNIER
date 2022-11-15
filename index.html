@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>CLICKER</title>
+	<meta name="description" content="Description de la page">
+
+
+	<!-- Feuille de css  -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Feuille script js  -->
+	<link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+	<div class="container">
+		<div id="titre">
+			<img src="image/oplogo.png" alt="OP">
+		</div>
+		<div id="image" onclick="changement_image()">
+			<img id="luffy" src="image/enfant.png" alt="luffy">
+			<div class="berry">
+				<h2>Vos berry : <span id="berry">0</span></h2>
+			</div>
+		</div>
+	</div>
+	<div class="flex-container container">
+		<div class="container-btn buttons flex-container">
+			<button class="custom-btn btn-5" id=" autoclick" onclick="autoclick()">AUTOCLICKER
+			</button>
+			<p id="autoclicker_cost">1000</p>
+		</div>
+		<div class="container-btn buttons flex-container">
+			<button class="custom-btn btn-5" id=" multiplier" onclick="augmenterMULTIPLIER()">CLICK + 1
+			</button>
+			<p id="multiplicateur_cost">10</p>
+		</div>
+		<div class="container-btn buttons flex-container">
+			<button class="custom-btn btn-5" id=" multiplier" onclick="multi5()">MULTI X 5
+			</button>
+			<p id="multi5_cost">100</p>
+		</div>
+	</div>
+</body>
+
+<script src="../COOKIES2/script.js"></script>
+
+</html>
