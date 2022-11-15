@@ -11,7 +11,7 @@
 	<!-- Feuille de css  -->
 	<link rel="stylesheet" href="css/style.css" />
 	<!-- Feuille script js  -->
-	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="script.js">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 		<div id="titre">
 			<img src="image/oplogo.png" alt="OP">
 		</div>
-		<div id="image" onclick="changement_image()">
+		<div id="image" onclick="changement_image(),  blague()">
 			<img id="luffy" src="image/enfant.png" alt="luffy">
 			<div class="berry">
 				<h2>Vos berry : <span id="berry">0</span></h2>
@@ -33,9 +33,9 @@
 			<p id="autoclicker_cost">1000</p>
 		</div>
 		<div class="container-btn buttons flex-container">
-			<button class="custom-btn btn-5" id=" multiplier" onclick="augmenterMULTIPLIER()">CLICK + 1
+			<button class="custom-btn btn-5" id=" multiplier" onclick="adition()">CLICK + 1
 			</button>
-			<p id="multiplicateur_cost">10</p>
+			<p id="adition_cost">10</p>
 		</div>
 		<div class="container-btn buttons flex-container">
 			<button class="custom-btn btn-5" id=" multiplier" onclick="multi5()">MULTI X 5
@@ -44,5 +44,9 @@
 		</div>
 	</div>
 </body>
+
+<!-- Appel du fichier script  -->
+
+<script src="script.js"></script>
 
 </html>
