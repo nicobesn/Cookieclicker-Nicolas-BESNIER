@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "OnePiece";
+    src: url(../font/one\ piece\ font.ttf);
+}
+
+
+body {
+    font-family: "OnePiece";
+    background-image: url(../image/voguemerry.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+img {
+    width: 40%;
+}
+
+img:active {
+    transform: scale(0.97);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 75px;
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.berry {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.505);
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+#berry{
+    color: #f0094a;
+}
+
+#titre{
+    padding: 1px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.505);
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-btn {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.flex-container {
+    display: flex;
+    
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    margin-right: 20px;
+}
+
+/* 5 */
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255, 27, 0);
+    background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+}
+
+.btn-5:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f0094a;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
